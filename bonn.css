@@ -1,0 +1,127 @@
+.first-div{
+    display: flex;
+}
+
+.choose{
+    margin-block: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: teal;
+}
+
+a:hover,
+a:focus-visible{
+
+    color: tomato;
+}
+
+a:active{
+    color: blueviolet;
+}
+button{
+    background-color: orange;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+header{
+    background-color: white;
+}
+body{
+    margin: 0px;
+}
+.href{
+    margin: 10px;
+}
+nav{
+    margin: 20px;
+    text-decoration: none;
+    
+}
+.first-h3{
+    margin-block: 0px;
+}
+
+.logo{
+    margin-block: 0px;
+}
+
+div{
+    gap: 10px;
+    justify-content: space-between;
+}
+
+h5{
+    color: gold;
+    margin-bottom: 0px;
+}
+
+.second-h2{
+    color: navy;
+}
+.sticker{
+    max-width: 70%;
+    height: auto;
+    border-radius: 9px;
+}
+
+.first-section{
+    padding: 30px;
+     
+}
+.para-1{
+    margin-block: 0px;
+}
+
+h4{
+    color: gold;
+    margin-block: 0px;
+}
+
+main{
+    color: white;
+    padding: 30px;
+    background-image: url(images/background\ img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media(width>600px){
+  div{
+    width: 100%;
+  }
+}
+
+.our-products{
+    max-width: 100%;
+    height: auto;
+    border-radius: 9px;
+}
+
+
+.first-h2{
+    margin-top: 0px;
+}
+
+.second-section{
+    background-color: navy;
+    color: white;
+    padding: 30px;
+}
+
+footer{
+    background-color: white;
+    color: black;
+}
