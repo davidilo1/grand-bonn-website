@@ -1,5 +1,8 @@
 .first-div{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
 }
 
 .choose{
@@ -8,38 +11,54 @@
 
 a{
     text-decoration: none;
-    color: black;
+    color: #0b1f3a;
+    transition: color 0.3s ease;
 }
 
 a:visited{
-    color: blue;
+    color: #0b1f3a;
 }
 
 a:hover{
-    color: teal;
+    color: #f5b400;
 }
 
 a:hover,
 a:focus-visible{
 
-    color: tomato;
+    outline: 2px solid #1d4ed8;
+    outline-offset: 4px;
 }
 
 a:active{
-    color: blueviolet;
+    color: #1d4ed8;
 }
 button{
-    background-color: orange;
-    border-radius: 8px;
+    background-color: #f5b400;
+    color: #0b1f3a;
+    border: none;
+    border-radius: 6px;
     margin: 20px;
-    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s,transform 0.3 ease;
+    padding: 12px 24px;
     display: inline-block;
+}
+
+button:hover{
+
+    background-color: #d99d00;
+    transform: translateY(-2px);
 }
 header{
     background-color: white;
 }
 body{
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
 }
 .href{
     margin: 10px;
@@ -90,17 +109,29 @@ h4{
 }
 
 main{
+    padding: 60px 30px;
     color: white;
     padding: 30px;
-    background-image: url(images/background\ img.jpg);
+    background-image:url(images/background\ img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-@media(width>600px){
-  div{
-    width: 100%;
+@media(width>768px){
+  .first-div{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .first-section,
+  .second-section{
+    padding: 20px;
+  }
+
+  .sticker,
+  .our-products{
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -124,4 +155,8 @@ main{
 footer{
     background-color: white;
     color: black;
+}
+
+h1{
+    color: #f2c14e;
 }
